@@ -1,5 +1,5 @@
 The Tako Data Visualization plugin allows users to embed responsive data-driven
-visualizations from https://www.trytako.com in their posts.
+visualizations from https://www.trytako.com.
 
 * Frequently Asked Questions
 
