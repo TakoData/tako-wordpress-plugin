@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Tako Data Visualizations
+ * Plugin Name: Tako Data Visualization
  * Version:     0.1
  */
 
