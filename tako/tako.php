@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Tako Wordpress
+ * Plugin Name: Tako Data Visualizations
  * Version:     0.1
  */
 
