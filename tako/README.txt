@@ -2,8 +2,8 @@
 Contributors: jintako
 Tags: data visualization
 Requires at least: 4.7
-Tested up to: 5.4
-Stable tag: 4.3
+Tested up to: 5.9.3
+Stable tag: 1.0
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
