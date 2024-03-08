@@ -1,0 +1,40 @@
+name: Deploy to WordPress.org
+on:
+  push:
+    branches: 
+      - main  # Trigger on push to main branch; adjust if you use a different branch for releases
+    tags:
+      - 'v*'  # Trigger on version tags, e.g., v1.0.0
+
+jobs:
+  build:
+    name: Build Plugin Zip
+    runs-on: ubuntu-latest
+    
+    steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+      
+        - name: Set up PHP
+          uses: shivammathur/setup-php@v2
+          with:
+            php-version: '7.4'
+      
+        - name: Execute build script
+          run: |
+            chmod +x build.sh
+            ./build.sh
+        - name: Deploy to WordPress.org
+          uses: 10up/action-wordpress-plugin-deploy@stable
+          env:
+            SVN_USERNAME: ${{ secrets.WORDPRESS_ORG_USERNAME }}
+            SVN_PASSWORD: ${{ secrets.WORDPRESS_ORG_PASSWORD }}
+            SLUG: tako-data-visualization  # Make sure this matches your plugin's slug on WordPress.org
+            ASSETS_DIR: .wordpress-org  # If you have an assets directory, specify it here
+          with:
+            generated-zip-path: tako_plugin.zip
+            svn-assets-dir: .wordpress-org
+
+        - name: Clean up
+          if: always()
+          run: rm -f tako_plugin.zip

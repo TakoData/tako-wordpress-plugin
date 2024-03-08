@@ -2,7 +2,7 @@
 Contributors: jintako
 Tags: data visualization
 Requires at least: 4.7
-Tested up to: 5.9.3
+Tested up to: 6.4.3
 Stable tag: 1.0
 Requires PHP: 7.0
 License: GPLv3
@@ -20,3 +20,12 @@ A: Registration is not necessary, but enterprise users will need to login to
    access themes and other data specific to the enterprise account.
 
 For support or additional questions, please reach out to hello@trytako.com.
+
+== Changelog ==
+
+= 1.0 =
+- Initial release. Allows embedding of responsive data-driven visualizations from Tako.
+- Tested up to WordPress 5.9.3.
+
+= 1.1 =
+- Tested on WordPress versions up to 6.4.3.
