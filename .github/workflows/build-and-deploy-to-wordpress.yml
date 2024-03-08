@@ -1,5 +1,7 @@
 name: Deploy to WordPress.org
 
+# Useful documentation on the 10up example we base this off: https://github.com/10up/action-wordpress-plugin-deploy/blob/develop/README.md
+
 on:
   push:
     branches: 
