@@ -3,7 +3,7 @@
  * Plugin Name: Tako Data Visualization
  * Plugin URI:  https://github.com/TakoData/tako-wordpress-plugin
  * Description: The Tako Data Visualization plugin allows users to embed responsive data-driven visualizations from https://www.trytako.com.
- * Version:     1.0
+ * Version:     1.0.4
  * License:     GPLv3
  */
  namespace tako;
